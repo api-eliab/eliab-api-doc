@@ -77,7 +77,7 @@ Use this service to create a session for App movile.
 
 | Key | Description | Type | Rules |
 |-----|-------------|------|-------|
-| info | [Structure defined in Home Page](../home.md) | Object | (Required) |
+| info | [Structure defined in Home Page](../home.md#Response-Structure) | Object | (Required) |
 | responseContent | Response data | Object | (Required) |
 | responseContent.user | Created user data | Object | (Required) |
 | responseContent.user.id | User unique identifier | Int64 | (Required) |
