@@ -19,13 +19,13 @@ These services require [Basic HTTP Authentication](https://en.wikipedia.org/wiki
 * User: colegios
 * Password: C013g10s@
 
-[Return](#Colegios---API-1.0.0)
+[Return](#Overview)
 
 ### Services
 
 The services were programmed with [REST-JSON](http://jsonapi.org/).
 
-[Return](#Colegios---API-1.0.0)
+[Return](#Overview)
 
 ### Request Structure
 
@@ -47,7 +47,7 @@ For GET requests the parameters must be send as **Query Parameters**, followed b
 
 You must also send the default headers explained in the following section.
 
-[Return](#Colegios---API-1.0.0)
+[Return](#Overview)
 
 ### Default Headers on Requests
 
@@ -65,7 +65,7 @@ The API needs some data for taking some decisions about the responses and intern
 | Timezone | Used to send the user timezone | (Optional) |
 | SessionID | Used to send the user session, created on login or registration. Send this value only when the user already has an open session | (Optional) |
 
-[Return](#Colegios---API-1.0.0)
+[Return](#Overview)
 
 ### Response Structure
 
@@ -102,7 +102,7 @@ The API responses use the next structure:
 
 The messages on the info section, may come on any of the services responses, by example, the API can respond with the required data and a warning message, in that moment the app must show the message to the user. That means that the app (iOS, Android, web) must be prepared to show messages at any time that the API responds with one in the info section.
 
-[Return](#Colegios---API-1.0.0)
+[Return](#Overview)
 
 ### Error Codes
 
@@ -116,11 +116,11 @@ The HTTP Status codes use for this services are:
 * 404 Not Found
 * 500 Internal Server Error
 
-[Return](#Colegios---API-1.0.0)
+[Return](#Overview)
 
 ## Microservices
 
 * [Session](./session/session.md)  
 * [Students](./students/students.md)
 
-[Return](#Colegios---API-1.0.0)
+[Return](#Overview)
