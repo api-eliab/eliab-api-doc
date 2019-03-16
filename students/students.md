@@ -8,6 +8,10 @@ The document content definition servicies from **Students** microservice
 * [First Login](#First-Login)  
 * [Login](#Login)  
 
+### Login
+
+[Return](#Session)
+
 ### Registration
 
 [Return](#Session)
@@ -16,8 +20,4 @@ The document content definition servicies from **Students** microservice
 
 [Return](#Session)
 
-### Login
-
-[Return](#Session)
-
-Back to [Home](../Home)
+< Back to [Home](../Home)

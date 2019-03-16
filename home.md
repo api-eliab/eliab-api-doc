@@ -121,6 +121,6 @@ The HTTP Status codes use for this services are:
 ## Microservices
 
 * [Session](./session/session.md)  
-* [Students](./students/students.md) 
+* [Students](./students/students.md)
 
 [Return](#Colegios---API-1.0.0)
