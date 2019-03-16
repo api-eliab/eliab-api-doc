@@ -1,50 +1,43 @@
-# Colegios - API 1.0.0 <a name="Home"></a>
-<!--## Contents
-[Sessions](#Sessions)
-[Admin Users](#Admin_users)  
-[Authorizations](#Authorizations)  
-[Countries](#Countries)  
-[Electronic Cards](#Electronic_cards)  
-[Emergencies](#Emergencies)  
-[FAQ's](#FAQs)  
-[Incidents](#Incidents)  
-[Informative Texts](#Informative_texts)  
-[Messages](#Messages)  
-[Notifications](#Notifications)  
-[Onboarding Slides](#Onboarding_slides)  
-[Online Payments](#Online_payments)  
-[Password Recoveries](#Password_recoveries)  
-[Policies](#Policies)  
-[Providers](#Providers)  
-[Quotations](#Quotations)    
-[Users](#Users)   -->
+# Colegios - API 1.0.0
 
 ## Overview
 
 The following is the web services definition for **Colegios - API 1.0.0**, for front-end.
 
-### 1. Authentication
+* [Authentication](#Authentication)  
+* [Services](#Services)  
+* [Request Structure](#Request-Structure)  
+* [Response Structure](#Response-Structure)  
+* [Default Headers on Requests](#Default-Headers-on-Requests)  
+* [Error Codes](#Error-Codes)  
+* [Microservices](#Microservices)  
+
+### Authentication
 
 These services require [Basic HTTP Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication). The credentials are the following:
 
 * User: colegios
 * Password: C013g10s@
 
-### 2. Services
+[Return](#Colegios---API-1.0.0)
+
+### Services
 
 The services were programmed with [REST-JSON](http://jsonapi.org/).
 
-### 3. Requests Structure
+[Return](#Colegios---API-1.0.0)
+
+### Request Structure
 
 You must send the required data on PUT, POST, PATCH, DELETE requests to API using the next body structure:
 
 ``` json
 {
     "requestContent": {
-    	...
+        ...
     }
 }
-``` 
+```
 
 | Key | Description | Type | Rules |
 |-----|-------------|------|-------|
@@ -54,14 +47,16 @@ For GET requests the parameters must be send as **Query Parameters**, followed b
 
 You must also send the default headers explained in the following section.
 
-### 4. Default Headers on Requests
+[Return](#Colegios---API-1.0.0)
+
+### Default Headers on Requests
 
 The API needs some data for taking some decisions about the responses and internal processes. The API requires the data through the request headers, the required headers are:
 
 | Key | Description | Rules |
 |-----|-------------|-------|
 | Authorization | Used to send the Basic Auth hash for authenticate device on API | (Required) (Format: Basic {{Hash}}) |
-| <div style="white-space: nowrap">Content-Type</div> | Used to send the request and response body type. The header value must be "application/json" | (Required) |
+| Content-Type | Used to send the request and response body type. The header value must be "application/json" | (Required) |
 | Guest | Used to send the user email, for both mobile and web app, When the user logs in the app must send the user email in the Guest header | (Optional) |
 | OS | Used to send the user host OS, The parameter must be **web** for all request on web app. For mobile app the parameter must be **android** or **ios**, it depends of the user mobile OS | (Required)  |
 | OSVersion | Used to send the user host OS version | (Required) (Format: Semantic Versioning 1.1.1) |
@@ -70,24 +65,26 @@ The API needs some data for taking some decisions about the responses and intern
 | Timezone | Used to send the user timezone | (Optional) |
 | SessionID | Used to send the user session, created on login or registration. Send this value only when the user already has an open session | (Optional) |
 
-### 5. Responses Structure
+[Return](#Colegios---API-1.0.0)
+
+### Response Structure
 
 The API responses use the next structure:
 
 ``` json
 {
     "info": {
-    	"type": "...",
+        "type": "...",
         "messageTitle": "...",
         "message": "...",
         "sessionID": "...",
         "action": "..."
     },
     "responseContent": {
-    	...
+        ...
     }
 }
-``` 
+```
 
 | Key | Description | Type | Rules |
 |-----|-------------|------|-------|
@@ -105,8 +102,9 @@ The API responses use the next structure:
 
 The messages on the info section, may come on any of the services responses, by example, the API can respond with the required data and a warning message, in that moment the app must show the message to the user. That means that the app (iOS, Android, web) must be prepared to show messages at any time that the API responds with one in the info section.
 
+[Return](#Colegios---API-1.0.0)
 
-### 6. Error Codes
+### Error Codes
 
 The services use [HTTP Status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) to notify errors. The apps must use the **info section** of the services responses, to show error messages (message type "error"), using the **"message_title", "message"** keys data.
 
@@ -117,3 +115,12 @@ The HTTP Status codes use for this services are:
 * 403 Forbidden
 * 404 Not Found
 * 500 Internal Server Error
+
+[Return](#Colegios---API-1.0.0)
+
+## Microservices
+
+* [Session](./session/session.md)  
+* [Students](./students/students.md) 
+
+[Return](#Colegios---API-1.0.0)
