@@ -77,7 +77,7 @@ Use this service to get the homework detail.
         "sessionId": "gTfI0uOuSZzl4d2nA4no5PIqrktzRgXu..."
     },
     "responseContent": {
-        "homeworks": [{
+        "homework": {
                 "id": 1821,
                 "points": 5,
                 "title": "Cuerpo Humano",
@@ -88,20 +88,7 @@ Use this service to get the homework detail.
                 "teachers_name" : "Odalia Ruiz",
                 "delivery_date": "12 de Abril",
                 "delivery_hour": "11:00 AM"
-            },
-            {
-                "id": 1822,
-                "points": 10,
-                "title": "Ecuaciones",
-                "short_description": "Realizar las primeras 5 ecuaciones del libro...",
-                "classroom_id": 4,
-                "classroom_name" : "Matemáticas",
-                "teachers_id" : "2",
-                "teachers_name" : "Silvia Barahona",
-                "delivery_date": "12 de Abril",
-                "delivery_hour": "09:00 AM"
             }
-        ]
     }
 }
 ```
