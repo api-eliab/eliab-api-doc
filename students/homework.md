@@ -62,7 +62,7 @@ Use this service to get the homework detail.
 
 #### Request
 
-* URL: /v1.0/students/{student_id}/{homework_id}/homework/detail
+* URL: /v1.0/students/{homework_id}/homework/detail
 * Method: GET
 
 #### Response
@@ -82,6 +82,7 @@ Use this service to get the homework detail.
                 "points": 5,
                 "title": "Cuerpo Humano",
                 "short_description": "La tarea consta de realizar una maqueta del cuerpo humano.",
+                "long_description" : "La tarea consta de realizar una maqueta del cuerpo humano. Se debe utilizar duroport y plastilina",
                 "classroom_id": 3,
                 "classroom_name" : "Ciencias Naturales",
                 "teachers_id" : "1",
