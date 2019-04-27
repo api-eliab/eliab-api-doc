@@ -12,7 +12,7 @@ Use this service to get the homework assignments for student.
 
 #### Request
 
-* URL: /v1.0/students/{student_id}/homework
+* URL: /v1.0/student/{student_id}/homeworks
 * Method: GET
 
 #### Response
@@ -62,7 +62,7 @@ Use this service to get the homework detail.
 
 #### Request
 
-* URL: /v1.0/students/{homework_id}/homework/detail
+* URL: /v1.0/student/{student_id}/homework/{homework_id}
 * Method: GET
 
 #### Response

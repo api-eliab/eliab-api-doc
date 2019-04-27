@@ -6,13 +6,13 @@ The document content definition servicies from **Events** microservice
 
 * [Get Event List](#EventList)  
 
-### Get Homework List
+### Get Event List
 
 Use this service to get the events.
 
 #### Request
 
-* URL: /v1.0/students/{student_id}/events
+* URL: /v1.0/student/{student_id}/events
 * Method: GET
 
 #### Response
@@ -33,7 +33,9 @@ Use this service to get the events.
                 "description": "Invitamos este 10 de Mayo a todas las madres...",
                 "icon" : 10,
                 "need_assisstance" : false,
+                "assisstance" : true,
                 "need_payment" : true,
+                "paid" : false,
                 "formatted_date": "10 de Mayo 10:00 AM"
             },
             {
@@ -42,7 +44,10 @@ Use this service to get the events.
                 "description": "La entrega de notas se realizará durante toda la mañana,se suspenden clases de los alumnos.",
                 "icon" : 11,
                 "need_assisstance" : true,
+                "assisstance" : false,
                 "need_payment" : false,
+                "need_payment" : false,
+                "paid" : false,
                 "formatted_date": "15 de Mayo 08:00 AM"
             },
         ]
@@ -60,8 +65,22 @@ Use this service to confirm or decline event assisstance.
 
 #### Request
 
-* URL: /v1.0/students/{student_id}/event/{true|false}/confirm_assisstant
+* URL: /v1.0/student/{student_id}/event/{event_id}/confirm_assisstant
 * Method: POST
+* Body:
+
+``` json
+{
+    "requestContent": {
+        "confirmed": true
+    }
+}
+```
+
+| Key | Description | Type | Rules |
+|-----|-------------|------|-------|
+| requestContent | Request data | Object | (Required) |
+| requestContent.confirmed | Confirm assist to event | Bool | (Required) |
 
 #### Response
 

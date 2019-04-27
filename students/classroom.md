@@ -12,7 +12,7 @@ Use this service to get the classroom assignments for student.
 
 #### Request
 
-* URL: /v1.0/students/{student_id}/classroom
+* URL: /v1.0/student/{student_id}/classrooms
 * Method: GET
 
 #### Response
@@ -50,7 +50,7 @@ Use this service to get the classroom detail.
 
 #### Request
 
-* URL: /v1.0/students/{student_id}/{classroom_id}/classroom/detail
+* URL: /v1.0/student/{student_id}/classroom/{classroom_id}
 * Method: GET
 
 #### Response
@@ -92,7 +92,7 @@ Use this service to get the classroom detail.
                         },...
                     ],
             }]
-        
+        }
     }
 }
 ```
