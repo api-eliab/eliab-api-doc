@@ -29,11 +29,13 @@ Use this service to get the classroom assignments for student.
     "responseContent": {
         "classrooms": [{
                 "id": 1,
-                "name": "Ciencias Naturales"
+                "name": "Ciencias Naturales",
+                "icon": 5
             },
             {
                 "id": 2,
-                "name": "Matemáticas"
+                "name": "Matemáticas",
+                "icon": 3
             }
         ]
     }
