@@ -67,11 +67,13 @@ Use this service to get the classroom detail.
     "responseContent": {
         "classroom": {
                 "name": "Matematicas",
-                "teacher": {
+                "teachers": [
+                    {
                     "id" : 1,
                     "name" : "Odalia",
                     "last_name" : "Ruiz"
-                },
+                    }
+                ],
                 "grade": "Tercero Primaria",
                 "course_dist":[{  
                     "perfect" : true,
