@@ -20,7 +20,7 @@ The document content definition servicies from **Students** microservice
 
 [Return](#Session)
 
-### Set Student Icon
+### Set Student Icon Service
 
 Use this service to set student icon.
 
@@ -28,6 +28,15 @@ Use this service to set student icon.
 
 * URL: /v1.0/student/{student_id}/icon/{iconID}
 * Method: POST
+* Body:
+
+``` json
+{
+    "requestContent": {
+
+    }
+}
+```
 
 #### Response
 
