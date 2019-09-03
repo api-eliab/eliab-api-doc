@@ -60,14 +60,15 @@ Use this service to send question to teacher.
 
 #### Request
 
-* URL: /v1.0/student/{student_id}/classroom/{classroom_id}/questions
+* URL: /v1.0/responsibles/{responsible_id}/questions
 * Method: POST
 * Body:
 
 ``` json
 {
     "requestContent": {
-        "question": "Hola que hace?"
+        "teacher_id": 100,
+        "question": "Hola que hace seño?"
     }
 }
 ```
