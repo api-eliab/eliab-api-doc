@@ -5,8 +5,11 @@ The document content definition servicies from **Events** microservice
 ## Services
 
 * [Get Event List](#EventList)  
+* [Confirm assisstant ](#ConfirmAssisstant)  
+
 
 ### Get Event List
+
 
 Use this service to get the events.
 
@@ -56,8 +59,6 @@ Use this service to get the events.
 ```
 
 [Return](#EventList)
-
-* [Confirm assisstant ](#ConfirmAssisstant)  
 
 ### Confirm Assisstant
 

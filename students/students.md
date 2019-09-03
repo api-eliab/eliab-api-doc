@@ -4,21 +4,7 @@ The document content definition servicies from **Students** microservice
 
 ## Services
 
-* [Registration](#Registration)  
-* [First Login](#First-Login)  
-* [Login](#Login)  
-
-### Login
-
-[Return](#Session)
-
-### Registration
-
-[Return](#Session)
-
-### First Login
-
-[Return](#Session)
+* [Set Student Icon Service](#Set-Student-Icon-Service)  
 
 ### Set Student Icon Service
 
@@ -52,7 +38,7 @@ Use this service to set student icon.
 }
 ```
 
-[Return](#HomeworkDetail)
+[Return](#Services)
 
 ### Send question
 
@@ -87,8 +73,6 @@ Use this service to send question to teacher.
 }
 ```
 
-[Return](#HomeworkDetail)
-
-
+[Return](#Services)
 
 < Back to [Home](../home.md)
