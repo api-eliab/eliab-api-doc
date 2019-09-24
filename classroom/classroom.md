@@ -4,8 +4,8 @@ The document content definition servicies from **Classroom** microservice
 
 ## Services
 
-* [Get Classroom list](#ClassroomList)  
-* [Get Classroom Detail ](#ClassroomDetail)  
+* [Get Classroom list](#Get-Classroom-List)  
+* [Get Classroom Detail ](#Get-Classroom-Detail)  
 
 
 ### Get Classroom List
@@ -44,7 +44,7 @@ Use this service to get the classroom assignments for student.
 }
 ```
 
-[Return](#ClassroomList)
+[Return](#Classroom)
 
 ### Get Classroom Detail
 
@@ -101,7 +101,7 @@ Use this service to get the classroom detail.
 }
 ```
 
-[Return](#ClassroomDetail)
+[Return](#Classroom)
 
 
 < Back to [Home](../home.md)
