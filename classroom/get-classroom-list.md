@@ -1,7 +1,4 @@
-< Back to [Classroom](./classroom.md)
-
 # **Get Classroom List**
-
 
 Use this service to get the classroom assignments for student.
 
