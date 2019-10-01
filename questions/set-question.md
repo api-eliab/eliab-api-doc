@@ -4,7 +4,7 @@ Use this service to set question to a teacher course.
 
 ## **Endpoint** 
 
-    GET: /v1.0/teachers/{teacher_id}
+    POST: /v1.0/questions/teachers/{teacher_id}
 
 ## **Request Parameters**
 
