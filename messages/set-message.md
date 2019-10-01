@@ -1,4 +1,4 @@
-# **Set message To Owner**
+# **Set Message To Teacher**
 
 Use this service to set message to a teacher course.
 
@@ -43,7 +43,7 @@ Use this service to set message to a teacher course.
 | requestContent.message | message info | Object | (Required) |
 | requestContent.message.title | Description message | String | (Required) |
 | requestContent.message.resource | Resource on which the message is being asked, for example: "First preparatory task". They can be the title of the task or course. | String | (Required) |
-| requestContent.message.messaje | message | String | (Required) |
+| requestContent.message.messaje | Message | String | (Required) |
 | requestContent.message.type | Type of message | String | (Required) |
 
 ## **Response Format**
