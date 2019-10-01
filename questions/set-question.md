@@ -68,10 +68,6 @@ On error, the header status code is an error code and the response body contains
 | Key | Description | Type | Rules |
 |-----|-------------|------|-------|
 | info | Info section is described at requests structure in  [home](../home.md#Response-Structure) page  | Object | (Required) |
-| responseContent | Response data | Object | (Required) |
-| responseContent.classrooms[] | Classrooms  | Array(Object) | (Required) |
-| responseContent.classrooms[].id | Classroom id | Int64 | (Required) |
-| responseContent.classrooms[].name | Classroom name | String | (Required) |
-| responseContent.classrooms[].icon | Classroom icon | Int64 | (Required) |
+
 
 < Back to [Classroom](./classroom.md)
