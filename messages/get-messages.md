@@ -34,7 +34,7 @@ On error, the header status code is an error code and the response body contains
         "sessionId": "gTfI0uOuSZzl4d2nA4no5PIqrktzRgXu..."
     },
     "responseContent": {
-        "messages": [
+        "messajes": [
             {
                 "title": "Mi titulo",
                 "resource": "Tarea preparatoria",
@@ -55,7 +55,12 @@ On error, the header status code is an error code and the response body contains
                 "state": 0,
                 "updatedAt": "",
             },
-        ]
+        ],
+        "limit": 100,
+        "next": "/v1.0/messages?offset=100&limit=100",
+        "offset": 0,
+        "previous": null,
+        "total": 105
     }
 }
 ```
@@ -73,5 +78,11 @@ On error, the header status code is an error code and the response body contains
 | responseContent.messages[].response | Response of message | String | (Required) |
 | responseContent.messages[].state | State of message | Int | (Required) |
 | responseContent.messages[].updatedAt | Date ISO 8601. Layout:   `2019-09-27T10:01:19Z` | Date | (Required) |
+| responseContent.limit | The maximum number of items in the response (as set in the query or by default). | Int | (Required) |
+| responseContent.next | URL to the next page of items. ( null if none) | String | (Required) |
+| responseContent.offset | The offset of the items returned (as set in the query or by default). | Int | (Required) |
+| responseContent.previous | URL to the previous page of items. ( null if none) | String | (Required) |
+| responseContent.total | The total number of items available to return. | Int | (Required) |
+
 
 < Back to [Classroom](./classroom.md)
