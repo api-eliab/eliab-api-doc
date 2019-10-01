@@ -1,4 +1,4 @@
-# **Get Responses**
+# **Get Question Responses**
 
 Use this service to get question to teacher course.
 
