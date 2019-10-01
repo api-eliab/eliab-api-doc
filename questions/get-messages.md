@@ -1,10 +1,10 @@
-# **Get Question Responses**
+# **Get Responses To Messages**
 
-Use this service to get question to teacher course.
+Use this service to get message to teacher course.
 
 ## **Endpoint** 
 
-    GET: /v1.0/questions
+    GET: /v1.0/messages
 
 ## **Request Parameters**
 
@@ -34,7 +34,7 @@ On error, the header status code is an error code and the response body contains
         "sessionId": "gTfI0uOuSZzl4d2nA4no5PIqrktzRgXu..."
     },
     "responseContent": {
-        "questions": [
+        "messages": [
             {
                 "title": "Mi titulo",
                 "resource": "Tarea preparatoria",
@@ -64,14 +64,14 @@ On error, the header status code is an error code and the response body contains
 |-----|-------------|------|-------|
 | info | Info section is described at requests structure in  [home](../home.md#Response-Structure) page  | Object | (Required) |
 | responseContent | Response data | Object | (Required) |
-| responseContent.questions[] | Questions  | Array(Object) | (Required) |
-| responseContent.questions[].title | Question info | String | (Required) |
-| responseContent.questions[].resourse | Description question | String | (Required) |
-| responseContent.questions[].message | Question | String | (Required) |
-| responseContent.questions[].type | Type of question | String | (Required) |
-| responseContent.questions[].createdAt | Date ISO 8601. Layout:   `2019-09-27T10:01:19Z` | Date | (Required) |
-| responseContent.questions[].response | Response of question | String | (Required) |
-| responseContent.questions[].state | State of question | Int | (Required) |
-| responseContent.questions[].updatedAt | Date ISO 8601. Layout:   `2019-09-27T10:01:19Z` | Date | (Required) |
+| responseContent.messages[] | messages  | Array(Object) | (Required) |
+| responseContent.messages[].title | message info | String | (Required) |
+| responseContent.messages[].resourse | Description message | String | (Required) |
+| responseContent.messages[].message | message | String | (Required) |
+| responseContent.messages[].type | Type of message | String | (Required) |
+| responseContent.messages[].createdAt | Date ISO 8601. Layout:   `2019-09-27T10:01:19Z` | Date | (Required) |
+| responseContent.messages[].response | Response of message | String | (Required) |
+| responseContent.messages[].state | State of message | Int | (Required) |
+| responseContent.messages[].updatedAt | Date ISO 8601. Layout:   `2019-09-27T10:01:19Z` | Date | (Required) |
 
 < Back to [Classroom](./classroom.md)

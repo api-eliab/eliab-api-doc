@@ -1,10 +1,10 @@
-# **Set Question To Owner**
+# **Set message To Owner**
 
-Use this service to set question to a teacher course.
+Use this service to set message to a teacher course.
 
 ## **Endpoint** 
 
-    POST: /v1.0/questions/teachers/{teacher_id}
+    POST: /v1.0/message/teachers/{teacher_id}
 
 ## **Request Parameters**
 
@@ -27,7 +27,7 @@ Use this service to set question to a teacher course.
 ``` json
 {
     "requestContent": {
-        "question": {
+        "message": {
             "title": "Mi titulo",
             "resource": "Tarea preparatoria",
             "message": "Mi mensaje",
@@ -40,11 +40,11 @@ Use this service to set question to a teacher course.
 | Key | Description | Type | Rules |
 |-----|-------------|------|-------|
 | requestContent | Request data | Object | (Required) |
-| requestContent.question | Question info | Object | (Required) |
-| requestContent.question.title | Description question | String | (Required) |
-| requestContent.question.resource | Resource on which the question is being asked, for example: "First preparatory task". They can be the title of the task or course. | String | (Required) |
-| requestContent.question.messaje | Question | String | (Required) |
-| requestContent.question.type | Type of question | String | (Required) |
+| requestContent.message | message info | Object | (Required) |
+| requestContent.message.title | Description message | String | (Required) |
+| requestContent.message.resource | Resource on which the message is being asked, for example: "First preparatory task". They can be the title of the task or course. | String | (Required) |
+| requestContent.message.messaje | message | String | (Required) |
+| requestContent.message.type | Type of message | String | (Required) |
 
 ## **Response Format**
 
