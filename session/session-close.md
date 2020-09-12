@@ -21,7 +21,7 @@ Use this service to close an activate App session.
 
 | HEADER FIELD | VALUE | DESCRIPTION | RULE |
 |---|---|---|:---:|
-| Content-Type | `application/x-www-form-urlencoded` | URL encoded form | *Required* |
+| Content-Type | `application/json; multipart/form-data;` | URL encoded form | *Required* |
 | Authorization | `Basic c951985e404309115...` | A valid access token from the eliab API | *Required* |
 | SessionID | `c951985e4043091155c660f11ac4c28d4...` | Active session ID | *Required* |
 | OS | Device OS version from where the request is made | String | *Optional* |
@@ -62,7 +62,7 @@ On success, the HTTP status code in the response header is `200` OK and the resp
 
 ```json
 curl --location --request POST '159.203.93.24:8080/v1.0/session/close' \
---header 'Content-Type: application/json;' \
+--header 'Content-Type: application/json; multipart/form-data;' \
 --header 'Sessionid: c951985e4043091155c660f11ac4c28d4...' \
 --header 'OS: Android' \
 --header 'AppVersion: 1.0.10' \
